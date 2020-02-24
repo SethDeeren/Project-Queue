@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Project Que</title>
+		<meta name="viewport" content="width=device-width, intial-scale=1.0">
+		<link rel="stylesheet" href="../public/stylesheets/authentication.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+
+
+	<body>
+		<div id="error">
+			<%if(messages.error){%>
+				<%=messages.error%>
+
+			<%}%>
+		</div>
+		<div class="container">
+		<form action="/login" method="POST">
+		 <img src="../public/assets/QUEUE no bg.png">
+
+			<div>
+
+				<label for="email">Email:</label>
+				<input type="text" name="email" require>
+			</div>
+			<div>	
+				<label for="password">password:</label>
+				<input type="password" name="password" require>
+			</div>
+			<button>
+				Login
+			</button>
+			<a href="/register">Create Account</a>
+		</form>
+			
+
+
+		</div>
+
+		<div id="footer"><a href="/">HomePage </a>  |  <a> About Us</a> | <a href="/login">  Login</a></div>
+	</body>
+</html>

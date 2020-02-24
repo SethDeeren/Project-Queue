@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Project Que</title>
+	<meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.4/semantic.min.css">
+    <link rel="stylesheet" href="../public/stylesheets/createProject.css">
+</head>
+
+<body>
+
+
+
+<div class="top-nav">
+  <a class="nav-item">Create Project</a>
+	<div class="nav-item"><a href="/">Home</a><a href="#">About Us</a></div>
+</div>
+  
+
+        <form class="ui form" action="/projects" method="POST">
+            <div class="field">
+                <label>Title</label>
+                <input type="text" name="project[title]" placeholder="title" required>
+            </div>
+            <div class="field">
+                
+            </div>
+            <div class="field">
+                <label>Description Of Project</label>
+                <textarea name="project[description]"></textarea>
+            </div>
+            <div style="display: inline-block" class="field">
+                <label>Number of Teams</label>
+                <input type="number" name="project[numOfGroups]" placeholder="Number of groups" required>
+            </div>
+            <div style="display: inline-block"class="field">
+                <label>Team Size</label>
+                <input type="number" name="project[groupSize]" placeholder="How many people per team" required>
+            </div>
+
+
+
+
+
+            <input id="create-button" type="submit">
+        </form>
+	</body>
+	
+</html>

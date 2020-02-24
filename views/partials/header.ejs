@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Project Que</title>
+	<meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.4/semantic.min.css">
+    <link rel="stylesheet" href="../public/stylesheets/main.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1 id="title">ProjectQue</h1>
+		<div>
+			<% if(!currentUser){ %>
+                        <a href="/login">Login</a>
+                        <a href="/register">Sign Up</a>
+                    <% } else { %>
+                        <a href="/logout">Logout</a>
+                    <% } %>
+		</div>
+    </div>
+   <nav>
+		
+			<a href="/">Search</a>
+			<a href="#">Help<i class="fa fa-question"></i></a>
+			<a href="/projects/new">Create Project</a>
+			<a href="">Join Project</a>
+<!-- 	needs work on search bar    -->
+			<!-- <input  id="searchbar" style="width: 200px; height: 30px; margin-right: 10px;" type="text" placeholder="Search"> -->
+    </nav>
+	
+				
+	
+	

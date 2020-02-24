@@ -1,0 +1,154 @@
+/* @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css?family=Raleway:200'); */
+body{
+  margin: 0;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color:#858B90;
+}
+
+nav a {
+  font-size: 20px;
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+/*   font-family: raleway; */
+  
+}
+
+
+
+
+a:hover{
+  color: #3498db;
+   
+}
+i{
+  margin-right: 10px;
+}
+@media screen and (max-width: 920px){
+  nav {
+    justify-content: center;
+  }
+  a{
+    font-size: 26px;
+  }
+}
+
+.header a {
+	margin: 10px;
+}
+
+@media screen and (max-width: 600px){
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.error{
+	background-color: #FA8787;
+	text-align: center;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+.container h1{
+  text-align: center;
+}
+.dash-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(128, 186, 233);
+  box-shadow: 10px 5px 5px rgb(68, 68, 68);
+  border-radius: 10px;
+  height: 300px;
+  margin: 25px;
+  flex: 1 1 300px;
+  
+}
+
+.dash-item a{
+  color: black;
+  border: 0.5px black solid;
+  border-radius: 3px;
+  padding: 3px;
+  background-color:rgba(133,139,144,.5);
+  box-shadow: 3px 1px 1px rgb(49, 49, 49);
+}
+
+
+
+.dash-item h3{
+  text-align: center;
+
+}
+
+.dash-item:hover{
+  background-color:#85C1F5;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color:rgba(133,139,144,.5);
+}
+
+
+
+#title{
+  margin: 10px;
+  
+}
+
+#user{
+  margin: 10px;
+  font-size: 40px;
+}
+
+p{
+  margin: 0px 15px;
+  
+}
+
+table {
+  margin: auto;
+  overflow-x: auto;
+}
+
+td {
+  
+  border: 2px solid black;
+  text-align: center;
+  width: 200px;
+  
+}
+
+
+table input{
+  width: 77.5%;
+  border: none;
+  margin: auto;
+}
+
+button{
+	margin-right: 0px;
+}
+
+input:focus{
+  outline: none;
+}
+
+.project-header{
+	text-align: center;
+}

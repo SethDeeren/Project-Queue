@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Project Que</title>
+	<meta name="viewport" content="width=device-width, intial-scale=1.0">
+	
+    <link rel="stylesheet" href="../public/stylesheets/landing.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+  
+    
+
+    <div class="container">
+	  <!--<h1 id="queue">QUEUE</h1>-->
+		<img src="../public/assets/QUEUE no bg.png">
+      <form id="search" action="/projects" method="GET">
+        <input class="container-buttonvv" type="text" name="search"  placeholder="search projects by id, title or author">
+        <button class="container-button"><i class="fa fa-search"></i></button> 
+      </form>
+		
+		<% if(!currentUser){ %>
+       <div class="container-button"><button onclick="window.location.href = '/register';">Sign Up</button></div>
+       <div class="container-button"><button onclick="window.location.href = '/login';">Login</button></div>
+		<%} else { %>
+		<div class="container-button"><button onclick="window.location.href = '/logout';"> logout </button></div>
+		<%}%>
+		<div class="container-button"><button onclick="window.location.href = '/projects/new';"> Create Project </button></div>
+		<div id="footer"><a href="/">About Us</a></div>
+    </div>
+  
+
+  
+</body>
+	
+<html>
+	
+	</html>
