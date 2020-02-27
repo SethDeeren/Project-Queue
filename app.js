@@ -54,6 +54,6 @@ app.use(projectRoutes);
 //app.use("/projects/:id/group", groupRoutes);
 //app.use("/projects/:id/group/:id/member", memberRoutes);
 
-app.listen(8080, ()=> {
+app.listen(process.env.PORT || 3000, ()=> {
  console.log('App listening on port 3000!');
 });
